@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -6,11 +5,11 @@ int main()
 {
     char e;
     float num1, num2;
-    cout << "enter first: ";
+    cout << "enter first number: ";
     cin >> num1;
-    cout << "enter one: *, +, -, /: ";
+    cout << "select : *, +, -, /: ";
     cin >> e;
-    cout << "enter second: ";
+    cout << "enter second number : ";
     cin >> num2;
     switch (e)
     {
@@ -29,9 +28,6 @@ int main()
     
     case '/':
     cout << num1 << " / " << num2 << " = " << num1 / num2;
-    break;
- 
-    cout << "hala haya";
     break;
     }
     return 0;
