@@ -1,34 +1,31 @@
-#include <iostream>
-using namespace std;
+#include<iostream>
 
-int main()
-{
-    char e;
-    float num1, num2;
-    cout << "enter first number: ";
-    cin >> num1;
-    cout << "select : *, +, -, /: ";
-    cin >> e;
-    cout << "enter second number : ";
-    cin >> num2;
-    switch (e)
-    {
-    case '*':
-    cout << num1 << " x " << num2 << " = " << num1 * num2;
-    break;
-    
-    case '+':
-    cout << num1 << " + " << num2 << " = " << num1 + num2;
-    break;
-    
-    case '-':
-    cout << num1 << " - " << num2 << " = " << num1 - num2;
-    break;
-    default:
-    
-    case '/':
-    cout << num1 << " / " << num2 << " = " << num1 / num2;
-    break;
+int main() {
+    string p = " + ";
+    string k = " - ";
+    string z = " × ";
+    string d = " ÷ ";
+    string e = " = ";
+    double a,b;
+    char o;
+    std::cin >> a >> o >> b;
+    switch (o) {
+        case '+':
+     std::cout << a << p << b << e << a + b << std::endl;
+        break;
+
+        case '-':
+     std::cout << a << k << b << e << a - b << std::endl;
+        break;
+
+        case '*':
+     std::cout << a << z << b << e << a * b << std::endl;
+        break;
+
+        case '/':
+    std::cout << a << d << b << e << a / b << std::endl;
+        break;
+
     }
     return 0;
 }
