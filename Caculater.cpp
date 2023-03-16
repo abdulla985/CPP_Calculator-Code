@@ -1,13 +1,14 @@
 #include<iostream>
 
 int main() {
-    string p = " + ";
-    string k = " - ";
-    string z = " × ";
-    string d = " ÷ ";
-    string e = " = ";
+    std::string p = " + ";
+    std::string k = " - ";
+    std::string z = " × ";
+    std::string d = " ÷ ";
+    std::string e = " = ";
     double a,b;
     char o;
+    std::cout << " Enter num1 op num2: ";
     std::cin >> a >> o >> b;
     switch (o) {
         case '+':
